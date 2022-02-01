@@ -301,6 +301,11 @@ nav ul ul li a:hover{
   }
 }
 @media (max-width: 750px){
+  header{
+    flex-direction: column;
+    height: 150px;
+    padding-bottom: 20px;
+  }
   .head .nav{
     width: 100%;
   }
