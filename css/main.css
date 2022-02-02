@@ -12,9 +12,11 @@
   --main-transition: .6s;
   --footer-color: #A5A6AA;
 }
+html,body{
+  overflow-x: hidden;
+}
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body{
   background-color: #F4F4F4;
