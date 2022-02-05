@@ -36,8 +36,7 @@ section, footer, .footer{
   }
 }
 .container{
-  margin: 0px auto;
-  padding: 0px 15px;
+  margin: auto;
 }
 .auto-grid{
   display: grid;
