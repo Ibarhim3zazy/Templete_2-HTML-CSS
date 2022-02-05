@@ -41,7 +41,6 @@ section, footer, .footer{
 .auto-grid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  justify-items: center;
   grid-gap: 60px;
 }
 /* small screen */
@@ -209,7 +208,7 @@ span{
     transform: translateX(33%);
   }
   .i_search{
-    position: fixed;
+    position: relative;
     top: 7%;
     right: 20px;
     z-index: 9999999;
