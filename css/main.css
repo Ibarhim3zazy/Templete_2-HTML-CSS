@@ -12,9 +12,6 @@
   --main-transition: .6s;
   --footer-color: #A5A6AA;
 }
-html,body{
-  overflow-x: hidden;
-}
 html{
   scroll-behavior: smooth;
 }
@@ -41,6 +38,7 @@ section, footer, .footer{
 section .container, footer .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
   grid-gap: 60px;
 }
 .special_heading{
@@ -69,7 +67,8 @@ section .container, footer .container{
   border: none;
   padding: 15px 20px;
   margin: 60px 0px;
-  margin-left: 50%;
+  position: relative;
+  left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   transition: var(--main-transition);
@@ -526,14 +525,18 @@ nav ul ul li a:hover{
   z-index: 0;
 }
 .ULTRICES .container{
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+@media (max-width: 775px) {
+  .ULTRICES .container{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
 }
 .ULTRICES .container blockquote{
   background-color: #fff;
   color: var(--secondary-color);
   padding: 25px 40px;
   border-radius: 15px;
-  width: 100%;
   position: relative;
   margin-bottom: 20px;
   transition: var(--main-transition);
@@ -596,7 +599,8 @@ nav ul ul li a:hover{
   background-color: #fff;
 }
 .HENDRERIT .container .cart{
-  height: 520px;
+  height: 650px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -604,7 +608,7 @@ nav ul ul li a:hover{
   align-items: flex-start;
 }
 .HENDRERIT .container .cart img{
-  width: 350px;
+  width: calc(100% - 60px);
 }
 .HENDRERIT .container .cart h4{
   color: var(--secondary-color);
@@ -635,7 +639,7 @@ nav ul ul li a:hover{
   font-size: 14px;
 }
 .HENDRERIT .container .cart .special_button{
-  margin: 0px;
+  left: 0;
   transform: translateX(0);
 }
 /* footer */
