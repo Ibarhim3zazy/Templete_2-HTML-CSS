@@ -102,7 +102,7 @@ section, footer, .footer{
   position: relative;
   cursor: pointer;
 }
-.imgover::after{
+  .imgover::after{
   content: "\f067";
   position: absolute;
   top: 0;
@@ -208,10 +208,11 @@ span{
     transform: translateX(33%);
   }
   .i_search{
-    position: relative;
-    top: 7%;
-    right: 20px;
-    z-index: 9999999;
+    top: -12px;
+    padding: 10px 40px;
+    background-color: var(--main-color);
+    right: -650%;
+    border-radius: 10px;
   }
 }
 /* header */
@@ -641,7 +642,7 @@ nav ul ul li a:hover{
   align-items: flex-start;
 }
 .HENDRERIT .container .cart img{
-  width: calc(100% - 60px);
+  width: 100%;
 }
 .HENDRERIT .container .cart h4{
   color: var(--secondary-color);
